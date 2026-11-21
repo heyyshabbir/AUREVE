@@ -1,0 +1,355 @@
+
+/* BASIC SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF8F2;
+    color: #493326;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 7%;
+    background-color: #F0E8DA;
+    border-bottom: 1px solid #D8C6AE;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.knight {
+    font-size: 43px;
+    color: #76543D;
+    transition: 0.4s ease;
+}
+
+.brand-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #493326;
+}
+
+.brand:hover .knight {
+    transform:rotate(-180deg)  scale(1.12);
+    color: #C6A76A;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #76543D;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #B18A52;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #76543D;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #493326;
+    transform: translateY(-3px);
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 60px 7%;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.small-heading {
+    color: #A17A53;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(55px, 6vw, 85px);
+    line-height: 0.95;
+    color: #493326;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #806D5D;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 430px;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #76543D;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #493326;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #76543D40;
+}
+
+.hero-footer {
+    margin-top: 75px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #A18C76;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    flex: 1;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 180px 180px 5px 5px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.06);
+}
+
+.image-label {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background-color: #FAF8F2E8;
+    padding: 18px 25px;
+}
+
+.image-label span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #806D5D;
+}
+
+.image-label h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #493326;
+}
+
+
+/* EXPLORE SECTION */
+
+.explore {
+    padding: 90px 7%;
+    text-align: center;
+    background-color: #F0E8DA;
+}
+
+.explore h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: #493326;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    color: #806D5D;
+    font-size: 13px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.card {
+    background-color: #FAF8F2;
+    padding: 35px 25px;
+    text-align: left;
+    border: 1px solid #E0D2C0;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px #49332618;
+    border-color: #C6A76A;
+}
+
+.card-icon {
+    font-size: 35px;
+    color: #B18A52;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #806D5D;
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #76543D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #493326;
+    color: #F0E8DA;
+}
+
+.about .knight {
+    color: #C6A76A;
+    font-size: 45px;
+}
+
+.about h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    letter-spacing: 8px;
+    margin: 10px 0;
+}
+
+.about p {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.about-line {
+    width: 65px;
+    height: 1px;
+    background-color: #C6A76A;
+    margin: 25px auto;
+}
+
+.copyright {
+    color: #C9B8A5;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-footer {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .brand-name {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .knight {
+        font-size: 35px;
+    }
+
+    .nav-button {
+        padding: 9px 13px;
+    }
+
+    .explore h2 {
+        font-size: 36px;
+    }
+
+}
